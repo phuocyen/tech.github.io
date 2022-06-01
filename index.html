@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <!-- import icon font awesome -->
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+          <!-- Import thư viện JQuery -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script>
+          // kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
+          var offset = 200;
+          // thời gian di trượt 0.75s ( 1000 = 1s )
+          var duration = 300;
+          $(function(){
+          $(window).scroll(function () {
+          if ($(this).scrollTop() > offset)
+          $('#top-up').fadeIn(duration);else
+          $('#top-up').fadeOut(duration);
+          });
+          $('#top-up').click(function () {
+          $('body,html').animate({scrollTop: 0}, duration);
+          });
+          });
+          </script>
+          
+          <div title="Về đầu trang" id="top-up">
+          <i class="fas fa-arrow-circle-up"></i></div>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="home.css">
+        
+        
+    </head>
+    <body>
+      
+        <div class="container">
+          
+            <div class="head">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="index.html" style="font-family:Candara;font-size: 65px;"><b>TECH.</b></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 30px ;">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html" style="font-size: 23px;" id="menu">Trang chủ &ensp; </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html" style="font-size: 23px;" id="menu">Sản phẩm &ensp; </a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" id="menu" href="#" style="color: rgb(45, 44, 44) ;font-size: 23px;" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                              Thương hiệu &ensp;  
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#" id="phai">SamSung </a></li>
+                              <li><a class="dropdown-item" href="#" id="phai">Apple</a></li>
+                              <li><a class="dropdown-item" href="#" id="phai">Xiaomi </a></li>
+                              <li><a class="dropdown-item" href="#" id="phai">Realme</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item action">
+                            <a class="nav-link active" aria-current="page" href="lienHe.html" style="font-size: 23px;" id="menu">Liên Hệ&ensp;</a>
+                          </li>
+                          <li class="nav-item action">
+                            <a class="nav-link active" aria-current="page" href="DN.html" style="font-size: 23px;" id="menu">Đăng nhập&ensp;</a>
+                          </li>
+                          <li class="nav-item action">
+                            <a class="nav-link active" aria-current="page" href="DK.html" style="font-size: 23px;" id="menu">Đăng ký</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Sản phẩm" aria-label="Search">
+                          <button class="btn btn-outline-dark" type="submit">Tìm</button>
+                        </form>
+                      </div>
+                    </div>
+                    
+                  </nav>
+            </div>
+        
+           
+            <div class="qc">
+              
+              
+            </div>
+            <div class="right">
+            <div class="top5"><br /><br />
+              <a>Top 5 Điện Thoại được yêu thích nhất</a>
+            </div>
+            
+              <div class="row row-cols-1 row-cols-md-5 g-4">
+                <div class="col">
+                  <div class="card h-100" id="sp">
+                    <a href="sanpham.html">
+                      <img src="10049549-dien-thoai-samsung-galaxy-a22-6gb-128gb-xanh-1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"><br />
+                        <a class="card-title" href="sanpham.html">Điện thoại Samsung Galaxy A22 6GB/128GB Xanh</a>
+                        <p class="card-gia">5.490.000đ</p>
+                        <p class="giam-gia">5.890.000đ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  
+                  <div class="card h-100" id="sp">
+                    <a href="sanpham1.html">
+                      <img src="10049869-dien-thoai-samsung-galaxy-a03s-64gb-xanh-1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"><br />
+                        <a class="card-title" href="sanpham1.html">Điện thoại Samsung Galaxy A03s 64GB Xanh</a>
+                        <p class="card-gia">3.190.000đ</p>
+                        <p class="giam-gia">3.690.000đ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100" id="sp">
+                    <a href="sanpham2.html">
+                      <img src="10050438-dien-thoai-oppo-a55-4gb-64gb-xanh-1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"><br />
+                        <a class="card-title" href="sanpham2.html">Điện thoại OPPO A55 4GB/64GB Xanh</a><br />
+                        <p class="card-gia">4.550.000đ</p>
+                        <p class="giam-gia">4.990.000đ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100" id="sp">
+                    <a href="sanpham3.html">
+                      <img src="10050442-dien-thoai-vivo-y15s-3gb-32gb-xanh-den-1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"><br />
+                        <a class="card-title" href="sanpham3.html">Điện thoại Vivo Y15s 3GB/32GB Xanh Đen</a><br />
+                        <p class="card-gia">2.990.000đ</p>
+                        <p class="giam-gia">3.490.000đ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <a href="sanpham.html">
+                    <div class="card h-100" id="sp">
+                      <img src="10051129-dien-thoai-samsung-galaxy-a03-32gb-den-1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"><br />
+                        <a class="card-title" href="sanpham.html">Điện thoại Samsung Galaxy A03 32GB Đen</a><br />
+                        <p class="card-gia">2.650.000đ</p>
+                        <p class="giam-gia">2.990.000đ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="left">
+              <a style="font-weight: 500;font-size: 30px;
+              position: relative;
+              color: #3f3f3f;">Điện Thoại</a><br /><br />
+                <ul class="list-group list-group-flush " style="font-size:20px ;" >
+                    <li class="list-group-item list-group-item-action" id="phai">Samsung</li>
+                    <li class="list-group-item list-group-item-action" id="phai">Apple</li>
+                    <li class="list-group-item list-group-item-action" id="phai">OPPO</li>
+                    <li class="list-group-item list-group-item-action" id="phai">Realme</li>
+                    <li class="list-group-item list-group-item-action" id="phai">Vivo</li>
+                    <li class="list-group-item list-group-item-action" id="phai">Xiaomi</li>
+                    <li class="list-group-item list-group-item-action" id="phai">Nokia</li>
+                    
+                </ul>
+            </div>
+            <div class="content">
+              <div class="dropdown" style="margin-left:900px;">
+                <a class="btn btn-outline-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sắp xếp theo
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" >
+                  <li><a class="dropdown-item action" href="#" id="phai" >Quan tâm nhẩt</a></li>
+                  <li><a class="dropdown-item action " href="#" id="phai">Giá từ thấp đến cao</a></li>
+                  <li><a class="dropdown-item action" href="#" id="phai">Giá từ cao đến thấp</a></li>
+                  <li><a class="dropdown-item action" href="#" id="phai">Bán chạy nhất</a></li>
+                </ul>
+              </div>
+              <br />
+              <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                  <div class="card h-100" id="sp">
+                    <a href="sanpham.html">
+                      <img src="10051583-dien-thoai-samsung-a53-5g-128gb-xanh-1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"><br />
+                        <a class="card-title" href="sanpham.html">Điện thoại Samsung A53 5G 128GB Xanh</a><br /><br />
+                        <p class="card-gia">26.490.000đ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100" id="sp">
+                    <a href="sanpham1.html">
+                      <img src="10051589-dien-thoai-oppo-reno7-z-5g-bac-1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"><br />
+                        <a class="card-title"  href="sanpham1.html">Điện thoại OPPO Reno7 5G Bạc</a><br /><br />
+                        <p class="card-gia">16.190.000đ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100" id="sp">
+                    <a href="sanpham2.html">
+                      <img src="10048673-dien-thoai-samsung-galaxy-a32-4g-128gb-xanh-1_7t44-z0.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"><br />
+                        <a class="card-title" href="sanpham2.html">Điện thoại Samsung Galaxy A32 4G 128GB Xanh</a>
+                        <p class="card-gia">6.550.000đ</p>
+                        <p class="giam-gia">6.990.000đ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100" id="sp">
+                    <a href="sanpham3.html">
+                      <img src="10050442-dien-thoai-vivo-y15s-3gb-32gb-xanh-den-1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"><br />
+                        <a class="card-title" href="sanpham3.html" >Điện thoại Vivo Y15s 3GB/32GB Xanh Đen</a><br /><br />
+                        <p class="card-gia">2.990.000đ</p>
+                        <p class="giam-gia">3.490.000đ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div><br /> <br />
+              <div class="row row-cols-1 row-cols-md-4 g-4" style="border-radius:5px ;">
+                <div class="col">
+                  <div class="card h-100" id="sp">
+                    <a href="sanpham4.html">
+                      <img src="10048673-dien-thoai-samsung-galaxy-a32-4g-128gb-xanh-1_7t44-z0.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"><br />
+                        <a class="card-title" href="sanpham4.html">Điện thoại Samsung Galaxy A32 4G 128GB Xanh</a>
+                        <p class="card-gia">5.490.000đ</p>
+                        <p class="giam-gia">5.890.000đ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100" id="sp">
+                    <a href="sanpham.html">
+                      <img src="10051331-dien-thoai-samsung-s22-plus-8gb-128gb-trang-1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"><br />
+                        <a class="card-title" href="sanpham.html">Điện thoại Samsung Galaxy S22 Plus 128GB Xanh</a>
+                        <p class="card-gia">15.190.000đ</p>
+                        <p class="giam-gia">15.690.000đ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100" id="sp">
+                    <a href="sanpham1.html">
+                      <img src="10048677-dien-thoai-samsung-galaxy-a52-4g-128gb-den-1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"><br />
+                        <a class="card-title" href="sanpham1.html">Điện thoại Samsung Galaxy A52 128GB</a><br /><br />
+                        <p class="card-gia">8.550.000đ</p>
+                        <p class="giam-gia">8.990.000đ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100" id="sp">
+                    <a href="sanpham2.html">
+                      <img src="10044955-dien-thoai-samsung-sm-g988b-ds-128gb-xam-1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"><br />
+                        <a class="card-title" href="sanpham2.html">Điện thoại Samsung SM G988B DS 128GB Xám</a>
+                        <p class="card-gia">9.990.000đ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                
+                
+              </div><br /><br />
+              <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                  <a href="sanpham3.html">
+                    <div class="card h-100" id="sp">
+                      <img src="10046909-dien-thoai-oppo-reno4-xanh-thien-ha-1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"><br />
+                        <a class="card-title" href="sanpham3.html">Điện thoại OPPO Reno4 Xanh thiên hà </a><br /><br />
+                        <p class="card-gia">5.490.000đ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100" id="sp">
+                    <a href="sanpham4.html">
+                      <img src="10049869-dien-thoai-samsung-galaxy-a03s-64gb-xanh-1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"><br />
+                        <a class="card-title" href="sanpham4.html">Điện thoại Samsung Galaxy A03s 64GB Xanh</a>
+                        <p class="card-gia">4.190.000đ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100" id="sp">
+                    <a href="sanpham4.html">
+                      <img src="10049352-dien-thoai-samsung-galaxy-s20-fe-8gb-256gb-xanh.jpg" class="card-img-top" alt="...">
+                      <div class="card-body"><br />
+                        <a class="card-title" href="sanpham4.html">Điện thoại Samsung Galaxy S20 256GB Xanh</a>
+                        <p class="card-gia">20.550.000đ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                
+                <br /> <br />
+                
+                
+                
+              </div> <br />
+              <nav aria-label="Page navigation example " >
+                <ul class="pagination justify-content-end " >
+                  
+                  <li class="page-item"><a class="page-link" href="#" style="color:red">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#" style="color:red">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#" style="color:red">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" style="color:red">Next</a>
+                  </li>
+                </ul>
+              </nav>
+              <br />
+            </div>
+              <div class="footer2">
+                <nav class="navbar navbar-dark bg-dark">
+                  <div class="container-fluid">
+                    <img src="fb4.png" href="https://vi-vn.facebook.com/">
+                    
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Sản phẩm" aria-label="Search">
+                      <button class="btn btn-outline-light" type="submit">Tìm</button>
+                    </form>
+                  </div>
+                </nav>
+              </div>
+            <div class="footer">
+              <div class="row">
+                <div class="col"><br />
+                  <a><b>Chính sách</b></a><br /><br />
+                  <a>
+                    Ưu đãi đối tác<br />
+                    Bảo vệ thông tin người dùng <br />
+                    Bảo mật giao dịch của khách hàng <br />
+                    Chính sách bảo hành <br />
+                  </a>
+                </div>
+                <div class="col order-5"><br />
+                  <a><b>Thông tin khác</b></a><br /><br />
+                  Email: <span style="color:rgb(243, 101, 101) ;">@hufi.edu.com</span><br />
+                  Điện thoại: <span style="color:rgb(250, 66, 66) ;">0912345678</span><br />
+                  2001207084 - Dương Thị Phương Thi
+                  <br />2001200561 - Mai Nguyễn Phước Yến
+                  <br />2001200103 - Nguyễn Anh Thái
+                </div>
+                <div class="col order-1"><br />
+                  <a><b>Hỗ trợ khách hàng</b></a><br /><br />
+                  <a>
+                    Hướng dẫn mua hàng<br />
+                    Hóa đơn điện tử <br />
+                    Phương thức thanh toán<br />
+                    Vận chuyển và giao nhận<br /><br />
+                    <br />
+                    
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="footer1" style="color: #3f3f3f; font-size: 15px; background-color: rgb(240, 240, 240);text-align: center;">
+              <a style="display: inline-block">
+                Copyright © 1999 - 2022 Công ty Cổ phần Thương mại TECH.<br />
+
+                Giấy chứng nhận đăng ký kinh doanh số 0xxxxxx, cấp ngày 22/05/2022 bởi Sở Kế hoạch và Đầu tư TP. Hồ Chí Minh.<br />
+                
+                Địa chỉ đăng ký trụ sở chính: 140 Lê Trọng Tấn, Q.Tân Phú, TP. Hồ Chí Minh
+              </a>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
